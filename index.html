@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kedar Kulkarni |</title>
+    <title>Kedar Kulkarni's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Kedar Kulkarni the Web Developer</h1>
+    <h1>Kedar Kulkarni component library</h1>
     <p>
       I am attending neog.camp, and i want to learn how to create full stack web
-      applications.
+      applications. This paragraph will have <strong>Important</strong> text.
     </p>
-
+    <hr />
     <h2>@typography</h2>
 
     <h1>This is the biggest heading</h1>
@@ -22,78 +23,119 @@
     <hr />
     <h2>@containers</h2>
     <h3>fluid container</h3>
-    <div>
+    <div class="container container-fluid">
       this is the fluid container and it will go till the end of the page
     </div>
     <h3>center container</h3>
-    <div>
+    <div class="container container-center">
       this is the fluid container and it will go till the specified width
     </div>
     <hr />
+
     <h2>@links</h2>
-    <a href="/">Primary Link</a>
-    <a href="/">Secondary link</a>
+    <a class="link link-primary" href="/">Primary Link</a>
+    <a class="link link-secondary" href="/">Secondary link</a>
     <hr />
+
     <h2>@Lists</h2>
-    <h3>ordered Lists</h3>
-    <ol>
-      <li>Milk</li>
-      <li>Veggies</li>
-      <li>Cheese</li>
-      <li>Butter</li>
-    </ol>
+    <p>Links will not have the bullet</p>
+    <h3>unordered Lists</h3>
+    <ul class="list-non-bullet">
+      <li>Item one</li>
+      <li>Item two</li>
+      <li>Item three</li>
+      <li>Item four</li>
+    </ul>
     <h3>unordered inline list</h3>
-    <ul>
-      <li>Inline item 1</li>
-      <li>Inline item 2</li>
-      <li>Inline item 3</li>
-      <li>Inline item 4</li>
+    <ul class="list-non-bullet">
+      <li class="list-item-inline">Inline item 1</li>
+      <li class="list-item-inline">Inline item 2</li>
+      <li class="list-item-inline">Inline item 3</li>
+      <li class="list-item-inline">Inline item 4</li>
     </ul>
     <h3>reversed ordered list</h3>
-    <ol>
+    <ol reversed>
       <li>Milk</li>
       <li>Veggies</li>
       <li>Cheese</li>
       <li>Butter</li>
     </ol>
     <hr />
-    <nav>
-      <b>KEDAR KULKARNI</b>
-      <ul>
-        <li>
-          <a href="/">Home</a>
+
+    <h2>@Nav</h2>
+    <nav class="navigation container">
+      <div class="nav-brand">KEDAR KULKARNI</div>
+      <ul class="nav-pills">
+        <li class="list-item-inline">
+          <a class="link-active" href="/">Home</a>
         </li>
-        <li>
+        <li class="list-item-inline">
           <a href="/">Projects</a>
         </li>
-        <li>
+        <li class="list-item-inline">
           <a href="/">Blogs</a>
         </li>
       </ul>
     </nav>
     <hr />
+
     <h2>@header</h2>
-    <header>
-      <img src="Images/hero.svg" alt="Person with many-monitors" />
-      <h1>heading inside hero</h1>
+    <header class="hero">
+      <img
+        class="hero-image"
+        src="Images/hero2.svg"
+        alt="Person with many-monitors"
+      />
+      <h1 class="hero-heading">
+        Kedar Kulkarni the <span class="txt-color-inverted">Web Developer</span>
+      </h1>
     </header>
     <hr />
-    <h2>@section</h2>
-    <h3>white section 1</h3>
-    <p>This will go end to end with little margin in both sides</p>
-    <h3>off-white section 2</h3>
-    <p>This will go end to end with little margin in both sides</p>
-    <h3>white section 3</h3>
-    <p>This will go end to end with little margin in both sides</p>
-    <hr />
-    <h2>@footer</h2>
 
-    <footer>
-      <div><b> Connect with me</b></div>
-      <ul>
-        <li><a href="/">gitHub</a></li>
-        <li><a href="/">twitter</a></li>
-        <li><a href="/">LinkedIn</a></li>
+    <h2>@section</h2>
+    <section class="section">
+      <div class="container-center">
+        <h3>Technologies</h3>
+        <p class="section-para">
+          I'm familiar with HTML5, CSS3, Git, JavaScript, NodeJS, ReactJS, and
+          Web Hosting.
+        </p>
+      </div>
+    </section>
+
+    <section class="section bg-ogreen">
+      <div class="container-center">
+        <h3>Projects</h3>
+        <p class="section-para">
+          I would like to showcase my work, and thus you can see my projects
+          hosted online.
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container-center">
+        <h3>Blogs</h3>
+        <p class="section-para">
+          I am also working on Technical & Non-technical Blogs to document my
+          Journey of Learning.
+        </p>
+      </div>
+    </section>
+    <hr />
+
+    <h2>@footer</h2>
+    <footer class="footer">
+      <div class="footer-headline"><b> Connect with me</b></div>
+      <ul class="list-non-bullet list-center">
+        <li class="list-item-inline">
+          <a class="foot-links" href="/">LinkedIn</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="foot-links" href="/">GitHub</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="foot-links" href="/">Twitter</a>
+        </li>
       </ul>
     </footer>
   </body>
