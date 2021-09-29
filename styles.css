@@ -59,12 +59,13 @@ list-style: none;
 .navigation{
     background-color: var(--primary-color);
     color: white;
-    padding: 1.7rem;
+    padding: 1rem;
     border-bottom-left-radius: 1.5rem;
+   
 }
 .navigation .nav-brand{
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: "Dancing Script";
     
 }
@@ -127,7 +128,7 @@ list-style: none;
 /* Footer */
 .footer{
     background-color: var(--primary-color);
-    padding: 1.7rem;
+    padding: 1rem;
     border-top-left-radius: 1.5rem;
     color: white;
     
